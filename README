@@ -1,0 +1,40 @@
+REST ENDPOINTS
+
+
+FETCH ALL --> 	GET localhost:8080/api/employees
+
+FETCH Id -->  	GET localhost:8080/api/employees/{id}     #provide id in URI without {}
+
+CREATE --> 		POST localhost:8080/api/employees      #provide json obj in Request body 
+
+UPDATE --> 		PUT localhost:8080/api/employees/{id} 	#provide id in URI without {} & json obj in Request body
+
+DELETE -->		DELETE localhost:8080/api/employees/{id} #provide id in URI without {}
+
+json example
+{
+        "firstName": "Christina",
+        "lastName": "D'souza",
+        "email": "Christina@icloud.com"
+}
+
+
+REST QUERY ENDPOINTS
+
+Search by First Name --> 
+GET localhost:8080/api/employees/queryFirst?Fname={fn}		#provide first name(fn) in URI without {}
+
+Search by Last Name -->
+GET localhost:8080/api/employees/queryLast?Lname={ln}		#provide last name(ln) in URI without {}
+
+Search by Email -->
+GET localhost:8080/api/employees/queryEmail?Email={e}		#provide email(e) in URI without {}
+
+Search by First and Last Name -->
+GET localhost:8080/api/employees/queryFirstLast?Fname={fn}&Lname={ln}  #provide fn and ln in URI without {}
+
+
+
+
+
+
